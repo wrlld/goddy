@@ -11,15 +11,12 @@ body{
 }
 .container{
     display: flex;
-    margin: auto;
-    margin-top: 150px;
+    margin: 10% auto;
     width: 65%;
-    height: 55%;
     border-radius: 10px;
 }
 .holder{
-   height: 100%;
-   width: 53%;
+   width: 50%;
 }
 .style{
     background-color: hsl(244, 38%, 16%);
@@ -74,4 +71,82 @@ span{
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 5px;
+}
+@media(max-width: 540px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid green;
+        height: 100vh;
+        margin: auto;
+    }
+    .header, .five{
+        font-size: 22px;
+    }
+    .foot{
+        margin-top: 70px;
+    }
+    .pag{
+        font-size: 17px;
+        margin-top: 50px;
+    }
+    .holder{
+        width: 100%;
+        height: 50%!important;
+    }
+}
+@media(max-width: 375px){
+    .header, .five{
+        font-size: 19px;
+    }
+    .pag{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    .comp{
+        font-size: 13px;
+    }
+    .foot{
+        margin-top: 45px;
+    }
+}
+@media(max-width: 280px){
+    .header{
+        font-size: 17px;
+    }
+    .pag{
+        font-size: 12px;
+        margin-top: 40px;
+    }
+    .foot{
+        margin-top: 40px;
+    } 
+    .five{
+        font-size: 17px;
+    }
+    .comp{
+        font-size: 10px;
+    }
+}
+@media(width: 820px){
+    .header{
+        font-size: 19px;
+    }
+    .pag, .five{
+        font-size: 15px;
+    }
+    .comp{
+        font-size: 10px;
+    }
+}
+@media(width: 768px){
+    .header{
+        font-size: 19px;
+    }
+    .pag, .five{
+        font-size: 15px;
+    }
+    .comp{
+        font-size: 9px;
+    }
 }
